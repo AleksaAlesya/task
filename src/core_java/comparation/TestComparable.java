@@ -29,7 +29,7 @@ public class TestComparable {
         System.out.println(allEmployeeList);
 
 
-//        //сортировка Comparator по возрасту
+//        //сортировка Comparator по имени
 //        Collections.sort(allEmployeeList, new SortByName());
 //        System.out.println(allEmployeeList);
 
