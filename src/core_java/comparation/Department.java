@@ -6,7 +6,6 @@ import java.util.List;
 public class Department {
     String name;
     List<Employee>employeeListOnDepartment;
-
     public Department(String name) {
         this.name = name;
         this.employeeListOnDepartment = new ArrayList<>();

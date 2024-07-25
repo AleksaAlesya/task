@@ -22,11 +22,12 @@ public class RegexDemo {
         {
             System.out.println("regex = " + args[0]);
             System.out.println("input = " + args[1]);
+            //компилируем паттерн с которым будем сравнивать
             Pattern p = Pattern.compile(args[0]);
+            //паттерн сравниваем со строкой, которую добавим на вход
             Matcher m = p.matcher(args[1]);
             System.out.println(m.toString());
             while (m.find())
-
                 System.out.println("Found [" + m.group() + "] starting at "
                         + m.start() + " and ending at " + (m.end() - 1));
 
