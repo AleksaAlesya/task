@@ -39,7 +39,17 @@ public class TestFile {
         String string = Files.readString(Path.of("src/test.txt"));
         System.out.println(string);
 
-
+//        File file = new File("src/calculation.txt");
+//        String path = file.getAbsolutePath();
+//        System.out.println(file.getName());
+//        System.out.println(path);
+//        try {
+//            FileInputStream fis = new FileInputStream(file);
+//            System.out.println(fis);/
+//
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
 
 
     }
