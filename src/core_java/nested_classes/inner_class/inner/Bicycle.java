@@ -1,4 +1,4 @@
-package core_java.nested_classes.inner_class;
+package core_java.nested_classes.inner_class.inner;
 
 public class Bicycle  {
 
