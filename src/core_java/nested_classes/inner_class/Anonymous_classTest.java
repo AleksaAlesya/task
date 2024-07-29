@@ -18,7 +18,7 @@ public class Anonymous_classTest {
         MonitoringSystem securitulModul = new MonitoringSystem() {
             @Override
             public void startMonitoring() {
-                System.out.println("Мониторинг общих показателей стартовал!");
+                System.out.println("Мониторинг sequrity стартовал!");
             }
         };
 
