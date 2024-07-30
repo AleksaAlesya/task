@@ -18,18 +18,20 @@ public class TestException {
 //        System.out.println(5/i);
         try {
             System.out.println(5/i);
+            try {
+                Thread.sleep(-100);
+                System.out.println("!!!!!");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                System.out.println("1111");
+            }
+            System.out.println("??");
+
         } catch (RuntimeException e) {
          e.printStackTrace(); // в этом случае выскочит ошибкка, но приложение не ляжет
         }
 
-        try {
-            Thread.sleep(-100);
-            System.out.println("!!!!!");
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            System.out.println("1111");
-        }
-        System.out.println("??");
+
 
     }
 

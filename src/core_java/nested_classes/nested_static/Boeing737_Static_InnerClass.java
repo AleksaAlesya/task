@@ -35,14 +35,12 @@ package core_java.nested_classes.nested_static;
                         '}';
             }
 
-
         }
         public static void main(String[] args) {
             // может создаваться без внешнего класса
             Drawing drawing = new Drawing(777);
             System.out.println(drawing);
             for (int i = 1; i < 6; i++) {
-
 
                 Boeing737_Static_InnerClass.Drawing drawing1 = new Boeing737_Static_InnerClass.Drawing(i);
                 System.out.println(drawing1);
