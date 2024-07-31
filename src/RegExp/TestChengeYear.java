@@ -11,17 +11,26 @@ public class TestChengeYear {
        String s1 = s.replaceAll("\\d{4}","5555");
         System.out.println(s1);
 
-        Pattern pt = Pattern.compile("\\d\\d\\d\\d");
+
+        Pattern pt = Pattern.compile("\\d{4}"); //\d\d\d\d
         Matcher mt = pt.matcher(s);
-        System.out.println(mt.matches());
+        System.out.println(mt.matches()+ "  Проверяет, соответствуеет ли вся строка  паттерну РВ"); // false
+        System.out.println(mt.find() + " проверяет , есть ли в строке часть соотв паттерну РВ"); //true
+
+        System.out.println( mt.group() + " возвращает первое соответствие");
+        while (mt.find()){
+            System.out.println( mt.group() );
+        }
+
 
         Matcher mt1 = pt.matcher(ss);
-        System.out.println(mt1.matches());
+        System.out.println(mt1.matches()); // true
 
         String mail = "alex@mail.ru";
         Pattern pattern =Pattern.compile("\\w{3,}@\\w+.\\w{2,3}");
         Matcher matcher =pattern.matcher(mail);
         System.out.println(matcher.matches());
+
     }
 
 
