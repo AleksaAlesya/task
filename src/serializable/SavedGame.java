@@ -9,7 +9,7 @@ public class SavedGame implements Serializable {
     private static final long serialVersionUID =1L;
 
   transient   Info info; // это поле не будет сериализоваться, т.е сохраняться
-    TerritoriesInfo territoriesInfo;
+    TerritoriesInfo territoriesInfo; // обязаятельно должно имплем. Serializable
     private String[] resourcesInfo;
     private String[] diplomacyInfo;
 

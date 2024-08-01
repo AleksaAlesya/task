@@ -10,7 +10,7 @@ public class TestFile {
 
         System.out.println("FileOutputStream++++++++++");
         File file0 = new File("src/test22.txt"); // если не существует - создает
-        FileOutputStream fileOutputStream = new FileOutputStream(file0,true); // дописываает в файл, есл не указать иру, то перезаписывает
+        FileOutputStream fileOutputStream = new FileOutputStream(file0,true); // дописываает в файл, есл не указать тру, то перезаписывает
         //  \n переносит на новую строку
         String stringOut = "Kak dela?  \n";
        fileOutputStream.write(stringOut.getBytes());

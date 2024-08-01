@@ -75,7 +75,7 @@ public class Test {
         }
 
     }
-    // листы с экземпл , любой кто наследуется от Animal
+    // листы с экземпл , любой кто наследуется от Animal  и Animal  в т.числе
     public  static  void test1 (List <? extends Animal> list){
         for (Animal animal : list) {
             animal.eat();

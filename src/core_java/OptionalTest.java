@@ -34,6 +34,7 @@ public class OptionalTest {
 
 //        orElseGet
 //        - при таком подходе, если не пустой, то метод орэлсегет даже не срабатывает
+         // d  этом случае можем  создать и вернуть что угодно
         System.out.println("Проверяем на пустоту, если пустой, то присвоить джон");
         String nullName = "мышь";
         String name = Optional.ofNullable(nullName).orElseGet(() -> "john");

@@ -15,7 +15,7 @@ package core_java.nested_classes.nested_static;
         }
 
         //вложенный статический класс.
-        // экз. могут созд-ся
+        // экз. могут созд-ся без создания внешнего
         // не имеет доступ к нестатическим даныым
         public static class Drawing {
             private int id;

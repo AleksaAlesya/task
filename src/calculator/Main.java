@@ -26,6 +26,9 @@ public class Main {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+
+            Integer i = 5;
+
     }
 
     }

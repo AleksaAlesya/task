@@ -17,6 +17,7 @@ public class IntegerCache {
         System.out.println(a1 == a2);
         System.out.println(a3 == a4);
         System.out.println(a5 == a6);
+        System.out.println(a5.equals(a6));
 
 
     }

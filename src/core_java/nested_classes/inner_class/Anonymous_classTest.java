@@ -22,6 +22,7 @@ public class Anonymous_classTest {
             }
         };
 
+
         MonitoringSystem errorModule = new MonitoringSystem() {
             @Override
             public void startMonitoring() {
