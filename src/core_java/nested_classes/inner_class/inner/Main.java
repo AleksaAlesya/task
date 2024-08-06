@@ -9,6 +9,9 @@ public class Main {
 //        seat.up(); приватный метод мы не видим вне внешнего класса
         seat.down();
 
+        //так тоже можно, но нежелателеьно
+        Bicycle.Seat seat1 = new Bicycle("LK",42,87,"pink").new Seat();
+        System.out.println(seat1);
 
 
 

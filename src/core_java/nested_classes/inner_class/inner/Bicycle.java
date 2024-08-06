@@ -48,6 +48,11 @@ public class Bicycle  {
         public void getSeatParam() {
             System.out.println("Параметр сиденья: диаметр подседельного штыря = " + Bicycle.this.seatPostDiameter);
         }
+
+        @Override
+        public String toString() {
+            return "Seat{}";
+        }
     }
 
     //если кл. приватный , то мы из др. не сможем создать, можем через конструктор внешнего класса. Так делать правильнее. Т.к. понятно, что созд. во время созд экз, а не просто

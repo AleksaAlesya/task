@@ -16,7 +16,10 @@ public class Test {
 //        Animal animal= (Animal) animalList.get(3); //ClassCastException:
 
         List<?> list = new ArrayList<>(); // лист с экземпляром какогото типа
-       // list.add(new Cat("Василий")); // компилятор не дает добавить  ничего
+//        list.add(new Cat("Василий")); // компилятор не дает добавить  ничего
+
+//        List<Object> list11 = new ArrayList<>(); // лист с экземпляром
+//        list.add(new Cat("Василий")); // компилятор не дает добавить  ничего
 
 // если типизировать родителем, тогда можно и наследника в лист добавлять
         List<Animal>animalList1 = new ArrayList<>();
