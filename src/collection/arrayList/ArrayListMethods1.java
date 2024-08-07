@@ -5,11 +5,12 @@ import java.util.Arrays;
 
 public class ArrayListMethods1
 {
-    // на основе динамического массива
-    // создается, когда не известен рразмер массива
-
-//    size
-//    capacity =10   по умолчанию
+   /* ArrayList - коллекция на основе динамического массива
+     обычно создается, когда не известен размер массива
+     size
+     capacity =10   по умолчанию
+      когда заканч, увелич. в 1,5 раза
+     */
     public static void main(String[] args) {
         //Коснтрукторы
         ArrayList arrayList = new ArrayList(); // лист с разными объектами ! плохая практика

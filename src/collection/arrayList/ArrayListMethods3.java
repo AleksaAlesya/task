@@ -5,7 +5,6 @@ import java.util.List;
 
 public class ArrayListMethods3 {
     public static void main(String[] args) {
-
         ArrayList <String> arrayList1 = new ArrayList<>();
 
         arrayList1.add("P");
@@ -30,9 +29,6 @@ public class ArrayListMethods3 {
 //        arrayList1.add("QQQQQ");
 //        System.out.println(arrayList1);
 //        System.out.println(list); // вылетит канкарентексепшен
-
-
-
 
 
         ArrayList <String> arrayList2 = new ArrayList<>();
