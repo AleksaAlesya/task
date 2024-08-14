@@ -6,7 +6,45 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class ConcurentHashMapT {
     public static void main(String[] args) throws InterruptedException {
-        ConcurrentHashMap<Integer,String>map = new ConcurrentHashMap<>();
+        //Выбросится ошибка, т.к. мапа будет изменена в процессе
+//        HashMap<Integer, String> hashMap = new HashMap<>();
+//        hashMap.put(124, "Olga");
+//        hashMap.put(125, "Piter");
+//        hashMap.put(128, "Olga");
+//        hashMap.put(124, "Nelly");
+//
+//        Runnable runnable1 = () -> {
+//            Iterator<Integer> iterator1 = hashMap.keySet().iterator();
+//            while (iterator1.hasNext()) {
+//                try {
+//                    Thread.sleep(100);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//
+//                }
+//                Integer i = iterator1.next();
+//                System.out.println(i + ":" + hashMap.get(i));
+//            }
+//        };
+//
+//        Runnable runnable11 = () -> {
+//            try {
+//                Thread.sleep(300);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            hashMap.put(25, "oooo");
+//
+//        };
+//        Thread thread1 = new Thread(runnable1);
+//        Thread thread11 = new Thread(runnable11);
+//        thread1.start();
+//        thread11.start();
+//        thread1.join();
+//        thread11.join();
+
+
+        ConcurrentHashMap<Integer,String> map = new ConcurrentHashMap<>();
         map.put(124,"Olga");
         map.put(125,"Piter");
         map.put(128,"Olga");
@@ -42,6 +80,8 @@ public class ConcurentHashMapT {
        thread.start();
        thread2.start();
        thread.join();
+
+
        thread2.join();
         System.out.println(map);
 
@@ -62,7 +102,9 @@ public class ConcurentHashMapT {
         }
     }
 
-
-
-
 }
+/* ConcurrentHashMap -  используется в многопоточности
+ * блокируется только бакет, с которым идет работа
+ * многжество потоков может читать коллекцию одновременно
+ * ни ключ, ни значение не м.б. Null - будет эксепшен
+ * */
